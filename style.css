@@ -1,0 +1,331 @@
+/* Page Style */
+
+body{
+  font-family: Merriweather, serif;
+  font-size:16px;
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: #F0F4EF;
+}
+
+/* Media Query for Desktop */
+
+@media only screen and (max-width: 1600px){
+.show{
+  display: none;
+}
+
+}
+
+/* Header Style */
+header{
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  width: 100%;
+  top:0%;
+  margin-right: 1rem;
+  border-bottom: 1px solid #083D77;
+  position: fixed;
+  background-color: #F0F4EF;
+  z-index: 1;
+}
+
+.hide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 1.5rem;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.logo span:last-child{
+  color: firebrick;
+}
+
+/* The navigation bar menu */
+.nav {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 72px; /* Stay at the top */
+  padding-top: 5px;
+  overflow: hidden;
+  background-color: #083D77
+}
+
+li {
+    float: left
+}
+
+/* The navigation menu links */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.show{
+  display: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+li a:hover {
+  color: #818181;
+}
+
+@media screen and (max-height: 800px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 1rem;}
+  .content {max-width: 500px;}
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {display: none;}
+  .show a{display: block}
+}
+
+/* Content */
+
+.content{
+  position: relative;
+  overflow-y: scroll;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75%;
+  margin:auto;
+  z-index: 0;
+}
+
+h1{
+  font-family: Merriweather, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-family: Merriweather, serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h3{
+  font-family: Merriweather, serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h4{
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+/* Bio Style */
+
+#main{
+
+  width: 100%;
+  position:relative;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 5%;
+  background-color: #BFD7EA;
+}
+
+.bio .right{
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.image{
+  overflow: hidden;
+}
+
+.image img{
+  position: relative;
+  left:30%;
+  height: 50%;
+  width: 25%;
+}
+
+#main .info{
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.bio .info{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin: 25px 0px 25px 0px;
+}
+
+#main h2{
+  margin-bottom: 1.5rem;
+}
+
+#main p{
+margin-bottom: 1.5rem;
+}
+
+/* Parallax Style */
+.parallax {
+  background-image: url("./images/Japan_Fish_Pegs.jpg");
+  height: 750px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Interest in IT Section */
+
+#interest{
+
+  width: 100%;
+  position:relative;
+  margin: 25px 0px 25px 0px;
+
+}
+
+.it h2{
+padding: 10px;
+}
+.it p{
+  padding: 10px;
+}
+
+/* Ideal Job Section */
+
+#job {
+
+width: 100%;
+position:relative;
+display: flex;
+margin: 25px 0px 25px 0px;
+}
+
+.jobDetails{
+  margin-right: 5px;
+  padding-right: 5px;
+  width: 60%;
+}
+
+.jobDetails h2{
+  padding: 10px;
+}
+
+.jobDetails h3{
+  padding: 10px;
+}
+
+.jobDetails h4{
+  padding: 10px;
+}
+
+.jobDetails p{
+  padding: 10px;
+}
+
+.images img{
+  height: 100%;
+  width: 70%;
+}
+
+/* Parallax2 Style */
+.parallax2 {
+  background-image: url("./images/Japan_MT_Fuji.jpg");
+  height: 750px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Personal Profile Section */
+
+#profile{
+
+  width: 100%;
+  position:relative;
+  margin: 25px 0px 25px 0px;
+}
+
+.personal{
+
+}
+
+.personal h2{
+  padding: 10px;
+}
+
+.personal h3{
+  padding: 10px;
+}
+
+.personal h4{
+  padding: 10px;
+}
+
+.personal img{
+  padding: 10px;
+}
+
+.personal p{
+  padding: 10px;
+}
+
+/* Project Idea Section */
+
+#project{
+
+  width: 100%;
+  position:relative;
+  margin: 25px 0px 75px 0px;
+}
+
+.idea{
+
+}
+
+.idea h2{
+  padding: 10px;
+}
+
+.idea h3{
+  padding: 10px;
+}
+
+.idea h4{
+  padding: 10px;
+}
+
+.idea p{
+  padding: 10px;
+}
