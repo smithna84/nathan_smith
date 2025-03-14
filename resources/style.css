@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+
 /* Page Style */
 
 body{
@@ -5,7 +7,7 @@ body{
   font-size:16px;
   width: 100%;
   height: 100%;
-  color: black;
+
   background-color: #F0F4EF;
 }
 
@@ -28,8 +30,8 @@ header{
   margin-right: 1rem;
   border-bottom: 1px solid #083D77;
   position: fixed;
-  background-color: #F0F4EF;
   z-index: 1;
+  background-color: #F0F4EF
 }
 
 .hide{
@@ -66,7 +68,7 @@ header{
   background-color: #083D77
 }
 
-li {
+.nav li {
     float: left
 }
 
@@ -110,11 +112,10 @@ li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
-  margin: auto;
-  margin-top: 50px;
+  width: 100%;
   z-index: 0;
   background-color: #F0F4EF;
+  background-position: center;
 }
 
 h1{
@@ -147,7 +148,7 @@ p{
 
 /* Bio Style */
 
-#main{
+.bio{
 
   width: 75%;
   position:relative;
@@ -160,6 +161,7 @@ p{
 .bio .right{
   margin: 2rem 1.5rem;
   width: 65%;
+  background-color: #F0F4EF
 }
 
 .image{
@@ -207,7 +209,7 @@ margin-bottom: 1.5rem;
 
 /* Interest in IT Section */
 
-#interest{
+#profile{
 
   width: 75%;
   position:relative;
@@ -222,7 +224,7 @@ padding: 10px;
   padding: 10px;
 }
 
-/* Ideal Job Section */
+/* Skills and Certifications Section */
 
 #job {
 
@@ -232,34 +234,39 @@ display: flex;
 margin: 25px 0px 25px 0px;
 }
 
-.jobDetails{
-  margin-right: 5px;
+.skills{
+  margin: 5px;
   padding-right: 5px;
-  width: 60%;
+  width: 75%;
 }
 
-.jobDetails h2{
+.skills h2{
   padding: 10px;
 }
 
-.jobDetails h3{
+.skills h3{
   padding: 10px;
 }
 
-.jobDetails h4{
+.skills h4{
   padding: 10px;
 }
 
-.jobDetails p{
+.skills p{
   padding: 10px;
 }
 
-.images img{
-  height: 100%;
-  width: 70%;
+ul{
+    list-style: circle outside;
+    margin-left: auto;
+}
+.skills li{
+    padding: 5px;
+
 }
 
 /* Parallax2 Style */
+
 .parallax2 {
   background-image: url("./images/Japan_MT_Fuji.jpg");
   height: 750px;
@@ -270,76 +277,44 @@ margin: 25px 0px 25px 0px;
   background-size: contain;
 }
 
-/* Personal Profile Section */
-
-#profile{
-
-  width: 75%;
-  position:relative;
-  margin: 25px 0px 25px 0px;
-}
-
-.personal{
-
-}
-
-.personal h2{
-  padding: 10px;
-}
-
-.personal h3{
-  padding: 10px;
-}
-
-.personal h4{
-  padding: 10px;
-}
-
-.personal img{
-  padding: 10px;
-}
-
-.personal p{
-  padding: 10px;
-}
-
 /* Project Idea Section */
 
-#project{
-
-  width: 75%;
+.testimonials{
+    width: 75%;
   position:relative;
   margin: 25px 0px 75px 0px;
 }
 
-.idea{
-
-}
-
-.idea h2{
+.testimonials h2{
   padding: 10px;
 }
 
-.idea h3{
-  padding: 10px;
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  width: 50%;
+  position: relative;
 }
 
-.idea h4{
-  padding: 10px;
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.idea p{
-  padding: 10px;
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
-/* Contact Page */
-
-.contact_details{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 100%;
-    margin: 25px 0px 25px 0px;
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
 }
-
-.contact_details
