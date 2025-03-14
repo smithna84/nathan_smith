@@ -318,3 +318,31 @@ ul{
   font-size: 20px;
   margin-right: 15px;
 }
+
+/* Personal Projects Page */
+
+/* Learning Projects */
+
+.learning{
+    width: 75%;
+  position:relative;
+  margin: 25px 0px 75px 0px;
+}
+
+.learning h2{
+  padding: 10px;
+}
+
+/* Work Projects Page */
+
+/* Work Projects */
+
+.work{
+    width: 75%;
+  position:relative;
+  margin: 25px 0px 75px 0px;
+}
+
+.work h2{
+  padding: 10px;
+}
