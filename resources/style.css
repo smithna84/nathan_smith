@@ -338,6 +338,16 @@ ul{
   height: 75%;
   width: 50%;
 }
+.learning p{
+  padding: 10px;
+}
+
+.learning a{
+position: relative;
+padding: 5px;
+margin: 25px 0px 25px 0px;
+top: 5px;
+}
 
 span.a {
   display: inline-block;
@@ -360,32 +370,10 @@ span.b {
   text-align:center;
 }
 
-.webcam p{
-    padding: 10px;
-  }
-
-.webcam a{
-  position: relative;
-  padding: 5px;
-  margin: 25px 0px 25px 0px;
-  top: 5px;
-}
-
 .weather{
   width: 100%;
   position:relative;
   text-align: center;
-}
-
-.weather p{
-    padding: 10px;
-  }
-
-.weather a{
-  position: relative;
-  padding: 5px;
-  margin: 25px 0px 25px 0px;
-  top: 5px;
 }
 
 .student{
@@ -394,17 +382,11 @@ span.b {
   text-align: center;
 }
 
-.student p{
-    padding: 10px;
-  }
-
-.student a{
-  position: relative;
-  padding: 5px;
-  margin: 25px 0px 25px 0px;
-  top: 5px;
+.restaurant{
+  width: 100%;
+  position:relative;
+  text-align: center;
 }
-
 
 /* Work Projects */
 
