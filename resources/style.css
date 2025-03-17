@@ -4,7 +4,7 @@
 
 body{
   font-family: Merriweather, serif;
-  font-size:16px;
+  font-size:12pt;
   width: 100%;
   height: 100%;
 
@@ -13,7 +13,7 @@ body{
 
 /* Media Query for Desktop */
 
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 1900px){
 .show{
   display: none;
 }
@@ -93,15 +93,27 @@ li a:hover {
 @media screen and (max-height: 800px) {
   .nav {padding-top: 15px;}
   .nav a {font-size: 1rem;}
-  .content {max-width: 500px;}
-}
+  .content {max-width: 100%;}
+  .bio .right{
+
+  width: 65%;
+  background-color: #F0F4EF}
+  .image{height: 100%;
+  width: 100%;}
+  }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .nav {padding-top: 15px;}
   .nav a {display: none;}
   .show a{display: block}
-}
+  .content {max-width: 100%;}
+  .bio .right{
+  width: 65%;
+  background-color: #F0F4EF}
+  .image{height: 100%;
+  width: 75%;}
+  }
 
 /* Content */
 
@@ -156,22 +168,20 @@ p{
   flex-direction: row-reverse;
   top: 10px;
   bottom: 5%;
+  margin: 10px;
   background-color: #F0F4EF;
 }
 
-.bio .right{
+.right{
   margin: 2rem 1.5rem;
   width: 65%;
   background-color: #F0F4EF
 }
 
-.image{
-  overflow: hidden;
-}
-
-.image img{
+.image > img{
   position: relative;
-  left:30%;
+
+  left: 30%;
   height: 50%;
   width: 25%;
 }
@@ -322,102 +332,160 @@ ul{
 
 /* Learning Projects */
 
-.learning{
-    width: 75%;
+.python{
+    width: 95%;
+  margin: 25px 0px 75px 0px;
+  top: 10px;
+}
+
+.python h2{
+  text-align: center;
+}
+
+.python img{
+  height: 60%;
+  width: 40%;
+}
+.python p{
+  padding: 10px;
+}
+
+.python a{
+padding: 5px;
+margin: 25px 0px 25px 0px;
+top: 5px;
+}
+
+.python span {
+  display: inline-flex;
+    position: relative;
+  left: 100px;
+  top: 50px;
+  width: 45%;
+  padding: 5px;
+   margin: 10px;
+}
+
+.webcam{
+    width: 100%;
+    height: 90%;
+    text-align:center;
+
+}
+
+.weather{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+
+}
+
+.student{
+  width: 100%;
+  height: 90%;
+  text-align: center;
+
+}
+
+.restaurant{
+  width: 100%;
+  height: 90%;
+  text-align: center;
+
+}
+
+.capstone{
+    width: 90%;
   position:relative;
   margin: 25px 0px 75px 0px;
   top: 10px;
 }
 
-.learning h2{
+.capstone h2{
+  text-align: center;
+}
+
+.capstone img{
+    margin: 5px;
+  height: 60%;
+  width: 40%;
+}
+.capstone p{
   padding: 10px;
 }
 
-.learning img{
-  left:30%;
-  height: 75%;
-  width: 50%;
-}
-.learning p{
-  padding: 10px;
-}
-
-.learning a{
+.capstone a{
 position: relative;
 padding: 5px;
 margin: 25px 0px 25px 0px;
 top: 5px;
 }
 
-span.a {
-  display: inline-block;
+.capstone span {
+  display: inline-flex;
+    position: relative;
+  left: 100px;
+  top: 50px;
   width: 45%;
-  
   padding: 5px;
-   
-}
-span.b {
-  display: inline-block;
-  width: 45%;
-  
-  padding: 5px;
-   
+   margin: 10px;
 }
 
-.webcam{
+.resume{
   width: 100%;
-  position:relative;
-  text-align:center;
-}
-
-.weather{
-  width: 100%;
-  position:relative;
-  text-align: center;
-}
-
-.student{
-  width: 100%;
-  position:relative;
-  text-align: center;
-}
-
-.restaurant{
-  width: 100%;
-  position:relative;
-  text-align: center;
+    height: 90%;
+    text-align: center;
 }
 
 /* Work Projects */
 
 .work{
-    width: 75%;
+    width: 90%;
     position:relative;
   margin: 25px 0px 75px 0px;
   top: 10px;
-  columns: 50% 2;
 }
 
-.jira{
-  width: 50%;
-  position:relative;
-  left: 20px;
+.work span {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  width: 45%;
+  padding: 5px;
+  margin: 10px;
 }
 
 .work h2{
   padding: 10px;
-  }
-  .jira p{
-    padding: 10px;
+  text-align: center;
   }
 
-.jira li{
-    padding: 5px;
+.work h3{
+    text-align: center;
 }
 
-.jira a{
+.work h4{
+    text-align: center;
+}
+
+.work p{
+    padding: 10px;
+    text-align: center;
+}
+
+.work a{
   position: relative;
   padding: 5px;
   margin: 25px 0px 25px 0px;
   top: 5px;
 }
+
+.jira{
+  width: 100%;
+  left: 20px;
+}
+
+.jira li{
+    padding: 5px;
+}
+
