@@ -11,6 +11,13 @@ body{
   background-color: #F0F4EF;
 }
 
+footer{
+    font-family: Merriweather, serif;
+    font-size:8pt;
+    position: absolute;
+    left: 10px;
+}
+
 /* Media Query for Desktop */
 
 @media only screen and (max-width: 1900px){
@@ -90,43 +97,46 @@ li a:hover {
   color: #818181;
 }
 
-@media (max-height: 800px) {
-  .nav {padding-top: 15px;}
-  .nav a {font-size: 1rem;}
-  .content {max-width: 600px;}
-  .info{
-  width: 65%;
-  background-color: #F0F4EF}
-  .image{height: 100%;
-  width: 100%;}
-  }
+/* Smaller screens*/
+@media (max-width:800px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    }
+    .container .webcam{
+    flex: 2;
+    width: 50%;
+    height: 45%;
+    text-align:center;}
+}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media (max-height: 450px) {
-  .nav {padding-top: 15px;}
-  .nav a {display: none;}
-  .show a{display: block}
-  .content {max-width: 400px;}
-  .info{
-  width: 65%;
-  background-color: #F0F4EF}
-  .image{height: 100%;
-  width: 75%;}
-  }
+/* 400px screen */
+
+@media (max-width:400px){
+    .python-container{
+    display: flex;
+    flex-direction: column;
+    }
+    .python-container .webcam{
+    flex: 2;
+    width: 300px;
+    height: 45%;
+    text-align:center;}
+}
 
 /* Content */
 
 .content{
   position: relative;
+  top: 120px;
   overflow-y: scroll;
-  padding-top: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
   z-index: 0;
   background-color: #F0F4EF;
-  background-position: center;
 }
 
 h1{
@@ -157,169 +167,12 @@ p{
   line-height: 1.5rem;
 }
 
-/* Bio Style */
-
-.info{
-  width: 90%;
-  position:relative;
-  display: inline-flex;
-  top: 30px;
-  bottom: 15%;
-
-  margin: 10px;
-  background-color: #F0F4EF;
-}
-
-.info span{
-    position: relative;
-    left: 10%;
-}
-
-.info img{
-    position: relative;
-    left: 30%;
-    bottom: 5px;
-  width: 20%;
-  height: 30%;
-}
-
-#main h2{
-  margin-bottom: 1.5rem;
-}
-
-#main p{
-margin-bottom: 1.5rem;
-}
-
-/* Parallax Style */
-.parallax {
-  background-image: url("./images/Japan_Fish_Pegs.jpg");
-  height: 750px;
-  width: 90%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* Interest in IT Section */
-
-#profile{
-
-  width: 75%;
-  position:relative;
-  margin: 25px 0px 25px 0px;
-
-}
-
-.it h2{
-padding: 10px;
-}
-.it p{
-  padding: 10px;
-}
-
-/* Skills and Certifications Section */
-
-#job {
-
-width: 75%;
-position:relative;
-display: flex;
-margin: 25px 0px 25px 0px;
-}
-
-.skills{
-  margin: 5px;
-  padding-right: 5px;
-  width: 75%;
-}
-
-.skills h2{
-  padding: 10px;
-}
-
-.skills h3{
-  padding: 10px;
-}
-
-.skills h4{
-  padding: 10px;
-}
-
-.skills p{
-  padding: 10px;
-}
-
-ul{
-    list-style-type: circle;
-    list-style-position: outside;
-}
-.skills li{
-    padding: 5px;
-
-}
-
-/* Parallax2 Style */
-
-.parallax2 {
-  background-image: url("./images/Japan_MT_Fuji.jpg");
-  height: 750px;
-  width: 99%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* Project Idea Section */
-
-.testimonials{
-    width: 75%;
-  position:relative;
-  margin: 25px 0px 75px 0px;
-}
-
-.testimonials h2{
-  padding: 10px;
-}
-
-.container {
-  border: 2px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
-  width: 50%;
-  position: relative;
-}
-
-/* Clear floats after containers */
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-.container img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-/* Increase the font-size of a span element */
-.container span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
 /* Learning Projects */
 
 .python{
     width: 95%;
-  margin: 25px 0px 75px 0px;
-  top: 10px;
+    margin: 25px 25px 0px 25px;
+    top: 10px;
 }
 
 .python h2{
@@ -335,143 +188,148 @@ ul{
 }
 
 .python a{
-padding: 5px;
-margin: 25px 0px 25px 0px;
-top: 5px;
+    padding: 5px;
+    margin: 25px 0px 25px 0px;
+    top: 5px;
 }
 
-.python span {
-  display: inline-flex;
-    position: relative;
-  left: 100px;
-  top: 50px;
-  width: 45%;
-  padding: 5px;
-   margin: 10px;
+
+.python-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
 }
 
-.webcam{
-    flex: 2;
-    width: 100%;
-    height: 90%;
-    text-align:center;
-
-}
-
-.weather{
-    flex: 2;
-    width: 100%;
-    height: 90%;
+.python-container .webcam{
+    grid-column-start: 1;
     text-align: center;
-
 }
 
-.student{
-  width: 100%;
-  height: 90%;
-  text-align: center;
-
+.python-container .weather{
+    grid-column-start: 2;
+    text-align: center;
 }
 
-.restaurant{
-  width: 100%;
-  height: 90%;
-  text-align: center;
+.python-container .student{
+    grid-column-start: 3;
+    text-align: center;
+}
 
+.python-container .restaurant{
+    grid-column-start: 4;
+
+    text-align: center;
 }
 
 .capstone{
-    width: 90%;
-  position:relative;
-  margin: 25px 0px 75px 0px;
-  top: 10px;
+    width: 95%;
+    margin: 0px 25px 25px 25px;
+    top: 10px;
 }
 
 .capstone h2{
-  text-align: center;
+    text-align: center;
 }
 
 .capstone img{
     margin: 5px;
-  height: 60%;
-  width: 40%;
+    height: 60%;
+    width: 40%;
 }
 .capstone p{
-  padding: 10px;
+    padding: 10px;
 }
 
 .capstone a{
-position: relative;
-padding: 5px;
-margin: 25px 0px 25px 0px;
-top: 5px;
-}
-
-.capstone span {
-  display: inline-flex;
     position: relative;
-  left: 100px;
-  top: 50px;
-  width: 45%;
-  padding: 5px;
-   margin: 10px;
-}
-
-.resume{
-  width: 100%;
-    height: 90%;
-    text-align: center;
-}
-
-/* Work Projects */
-
-.work{
-    width: 90%;
-    position:relative;
-  margin: 25px 0px 75px 0px;
-  top: 10px;
-}
-
-.work span {
-  display: inline-block;
-  position: relative;
-  left: 100px;
-  width: 45%;
-  padding: 5px;
-  margin: 10px;
-}
-
-.work h2{
-  padding: 10px;
-  text-align: center;
-  }
-
-.work h3{
-    text-align: center;
-}
-
-.work h4{
-    text-align: center;
-}
-
-.work p{
-    padding: 10px;
-    text-align: center;
-}
-
-.work a{
-  position: relative;
-  padding: 5px;
-  margin: 25px 0px 25px 0px;
-  top: 5px;
-}
-
-.jira{
-  width: 100%;
-  left: 20px;
-}
-
-.jira li{
     padding: 5px;
+    margin: 25px 0px 25px 0px;
+    top: 5px;
 }
 
+.capstone-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.capstone-container .resume1{
+    grid-column-start: 1;
+    text-align: center;
+}
+
+.capstone-container .resume2{
+    grid-column-start: 2;
+    text-align: center;
+}
+
+.capstone-container .resume3{
+    grid-column-start: 3;
+    text-align: center;
+}
+
+.capstone-container .resume4{
+    grid-column-start: 4;
+    text-align: center;
+}
+
+.websites{
+    width: 95%;
+    margin: 0px 25px 25px 25px;
+    top: 10px;
+}
+
+.websites h2{
+    text-align: center;
+}
+
+.websites img{
+    margin: 5px;
+    height: 60%;
+    width: 40%;
+}
+.websites p{
+    padding: 10px;
+}
+
+.websites a{
+    position: relative;
+    padding: 5px;
+    margin: 25px 0px 25px 0px;
+    top: 5px;
+}
+
+.websites-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.websites-container .colmar-academy{
+    grid-column-start: 1;
+    text-align: center;
+}
+
+.websites-container .resume2{
+    grid-column-start: 2;
+    text-align: center;
+}
+
+.websites-container .resume3{
+    grid-column-start: 3;
+    text-align: center;
+}
+
+.websites-container .resume4{
+    grid-column-start: 4;
+    text-align: center;
+}

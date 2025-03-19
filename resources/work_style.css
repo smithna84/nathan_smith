@@ -7,8 +7,15 @@ body{
   font-size:12pt;
   width: 100%;
   height: 100%;
-
   background-color: #F0F4EF;
+}
+
+footer{
+    font-family: Merriweather, serif;
+    font-size:8pt;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
 }
 
 /* Media Query for Desktop */
@@ -119,7 +126,7 @@ li a:hover {
 .content{
   position: relative;
   overflow-y: scroll;
-  padding-top: 90px;
+  top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,122 +164,18 @@ p{
   line-height: 1.5rem;
 }
 
-/* Learning Projects */
-
-.python{
-    width: 95%;
-  margin: 25px 0px 75px 0px;
-  top: 10px;
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
 }
 
-.python h2{
-  text-align: center;
-}
-
-.python img{
-  height: 60%;
-  width: 40%;
-}
-.python p{
-  padding: 10px;
-}
-
-.python a{
-padding: 5px;
-margin: 25px 0px 25px 0px;
-top: 5px;
-}
-
-.python span {
-  display: inline-flex;
-    position: relative;
-  left: 100px;
-  top: 50px;
-  width: 45%;
-  padding: 5px;
-   margin: 10px;
-}
-
-.webcam{
-    flex: 2;
-    width: 100%;
-    height: 90%;
-    text-align:center;
-
-}
-
-.weather{
-    flex: 2;
-    width: 100%;
-    height: 90%;
-    text-align: center;
-
-}
-
-.student{
-  width: 100%;
-  height: 90%;
-  text-align: center;
-
-}
-
-.restaurant{
-  width: 100%;
-  height: 90%;
-  text-align: center;
-
-}
-
-.capstone{
-    width: 90%;
-  position:relative;
-  margin: 25px 0px 75px 0px;
-  top: 10px;
-}
-
-.capstone h2{
-  text-align: center;
-}
-
-.capstone img{
-    margin: 5px;
-  height: 60%;
-  width: 40%;
-}
-.capstone p{
-  padding: 10px;
-}
-
-.capstone a{
-position: relative;
-padding: 5px;
-margin: 25px 0px 25px 0px;
-top: 5px;
-}
-
-.capstone span {
-  display: inline-flex;
-    position: relative;
-  left: 100px;
-  top: 50px;
-  width: 45%;
-  padding: 5px;
-   margin: 10px;
-}
-
-.resume{
-  width: 100%;
-    height: 90%;
-    text-align: center;
-}
 
 /* Work Projects */
 
 .work{
-    width: 90%;
-    position:relative;
-  margin: 25px 0px 75px 0px;
-  top: 10px;
+    width: 95%;
+    margin: 25px 25px 0px 25px;
+    top: 10px;;
 }
 
 .work span {
@@ -309,12 +212,22 @@ top: 5px;
   top: 5px;
 }
 
+.work-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 510px;
+}
+
 .jira{
   width: 100%;
   left: 20px;
 }
 
-.jira li{
+.work-container li{
     padding: 5px;
 }
 

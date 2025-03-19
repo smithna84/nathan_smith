@@ -11,6 +11,13 @@ body{
   background-color: #F0F4EF;
 }
 
+footer{
+    font-family: Merriweather, serif;
+    font-size:8pt;
+    position: absolute;
+    left: 10px;
+}
+
 /* Media Query for Desktop */
 
 @media only screen and (max-width: 1900px){
@@ -60,7 +67,8 @@ header{
   list-style-type: none;
   width: 100%;
   margin: 0;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  position: fixed; /* Fixed Navbar (stay in place on scroll) */
+
   z-index: 1; /* Stay on top */
   top: 72px; /* Stay at the top */
   padding-top: 5px;
@@ -69,16 +77,18 @@ header{
 }
 
 .nav li {
-    float: left
+    display: inline;
+    align-items: center;
+
 }
 
 /* The navigation menu links */
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
+li a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .show{
@@ -90,43 +100,20 @@ li a:hover {
   color: #818181;
 }
 
-@media (max-height: 800px) {
-  .nav {padding-top: 15px;}
-  .nav a {font-size: 1rem;}
-  .content {max-width: 600px;}
-  .info{
-  width: 65%;
-  background-color: #F0F4EF}
-  .image{height: 100%;
-  width: 100%;}
-  }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media (max-height: 450px) {
-  .nav {padding-top: 15px;}
-  .nav a {display: none;}
-  .show a{display: block}
-  .content {max-width: 400px;}
-  .info{
-  width: 65%;
-  background-color: #F0F4EF}
-  .image{height: 100%;
-  width: 75%;}
-  }
 
 /* Content */
 
 .content{
-  position: relative;
-  overflow-y: scroll;
-  padding-top: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  z-index: 0;
-  background-color: #F0F4EF;
-  background-position: center;
+    position: relative;
+    overflow-y: scroll;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    background-color: #F0F4EF;
+    background-position: center;
 }
 
 h1{
@@ -159,36 +146,41 @@ p{
 
 /* Bio Style */
 
-.info{
-  width: 90%;
-  position:relative;
-  display: inline-flex;
-  top: 30px;
-  bottom: 15%;
-
-  margin: 10px;
-  background-color: #F0F4EF;
+/* flex */
+.info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F0F4EF;
+    width: 75%;
+    top: 100px;
+    margin: 25px 0px 25px 0px;
 }
 
-.info span{
-    position: relative;
-    left: 10%;
+.info-container .bio{
+    width: 45%;
+    top: 50px;
+    bottom: 15%;
+    margin: 10px;
+    background-color: #F0F4EF;
 }
 
-.info img{
-    position: relative;
-    left: 30%;
+.info-container .image{
+    width: 400px;
+    height: 100%;
+    left: 50px;
+    top: 20px;
     bottom: 5px;
-  width: 20%;
-  height: 30%;
 }
 
-#main h2{
-  margin-bottom: 1.5rem;
-}
-
-#main p{
-margin-bottom: 1.5rem;
+.image img{
+    width: 40%;
+    height: 60%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
 }
 
 /* Parallax Style */
@@ -253,7 +245,7 @@ margin: 25px 0px 25px 0px;
 
 ul{
     list-style-type: circle;
-    list-style-position: outside;
+    list-style-position: inside;
 }
 .skills li{
     padding: 5px;
@@ -265,7 +257,7 @@ ul{
 .parallax2 {
   background-image: url("./images/Japan_MT_Fuji.jpg");
   height: 750px;
-  width: 99%;
+  width: 90%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
