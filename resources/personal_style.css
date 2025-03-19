@@ -245,8 +245,8 @@ p{
 
 .capstone a{
     position: relative;
+    display: block;
     padding: 5px;
-    margin: 25px 0px 25px 0px;
     top: 5px;
 }
 
@@ -300,8 +300,8 @@ p{
 
 .websites a{
     position: relative;
+    display: block;
     padding: 5px;
-    margin: 25px 0px 25px 0px;
     top: 5px;
 }
 

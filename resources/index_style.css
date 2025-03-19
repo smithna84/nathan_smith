@@ -211,6 +211,10 @@ padding: 10px;
   padding: 10px;
 }
 
+.it li{
+  padding: 5px;
+}
+
 /* Skills and Certifications Section */
 
 #job {
