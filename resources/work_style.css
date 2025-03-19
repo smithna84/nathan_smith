@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+
+/* Page Style */
+
+body{
+  font-family: Merriweather, serif;
+  font-size:12pt;
+  width: 100%;
+  height: 100%;
+
+  background-color: #F0F4EF;
+}
+
+/* Media Query for Desktop */
+
+@media only screen and (max-width: 1900px){
+.show{
+  display: none;
+}
+
+}
+
+/* Header Style */
+header{
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  width: 100%;
+  top:0%;
+  margin-right: 1rem;
+  border-bottom: 1px solid #083D77;
+  position: fixed;
+  z-index: 1;
+  background-color: #F0F4EF
+}
+
+.hide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 1.5rem;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.logo span:last-child{
+  color: firebrick;
+}
+
+/* The navigation bar menu */
+.nav {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 72px; /* Stay at the top */
+  padding-top: 5px;
+  overflow: hidden;
+  background-color: #083D77
+}
+
+.nav li {
+    float: left
+}
+
+/* The navigation menu links */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.show{
+  display: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+li a:hover {
+  color: #818181;
+}
+
+@media (max-height: 800px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 1rem;}
+  .content {max-width: 600px;}
+  .info{
+  width: 65%;
+  background-color: #F0F4EF}
+  .image{height: 100%;
+  width: 100%;}
+  }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {display: none;}
+  .show a{display: block}
+  .content {max-width: 400px;}
+  .info{
+  width: 65%;
+  background-color: #F0F4EF}
+  .image{height: 100%;
+  width: 75%;}
+  }
+
+/* Content */
+
+.content{
+  position: relative;
+  overflow-y: scroll;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+  background-color: #F0F4EF;
+  background-position: center;
+}
+
+h1{
+  font-family: Merriweather, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-family: Merriweather, serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h3{
+  font-family: Merriweather, serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h4{
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+/* Learning Projects */
+
+.python{
+    width: 95%;
+  margin: 25px 0px 75px 0px;
+  top: 10px;
+}
+
+.python h2{
+  text-align: center;
+}
+
+.python img{
+  height: 60%;
+  width: 40%;
+}
+.python p{
+  padding: 10px;
+}
+
+.python a{
+padding: 5px;
+margin: 25px 0px 25px 0px;
+top: 5px;
+}
+
+.python span {
+  display: inline-flex;
+    position: relative;
+  left: 100px;
+  top: 50px;
+  width: 45%;
+  padding: 5px;
+   margin: 10px;
+}
+
+.webcam{
+    flex: 2;
+    width: 100%;
+    height: 90%;
+    text-align:center;
+
+}
+
+.weather{
+    flex: 2;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+
+}
+
+.student{
+  width: 100%;
+  height: 90%;
+  text-align: center;
+
+}
+
+.restaurant{
+  width: 100%;
+  height: 90%;
+  text-align: center;
+
+}
+
+.capstone{
+    width: 90%;
+  position:relative;
+  margin: 25px 0px 75px 0px;
+  top: 10px;
+}
+
+.capstone h2{
+  text-align: center;
+}
+
+.capstone img{
+    margin: 5px;
+  height: 60%;
+  width: 40%;
+}
+.capstone p{
+  padding: 10px;
+}
+
+.capstone a{
+position: relative;
+padding: 5px;
+margin: 25px 0px 25px 0px;
+top: 5px;
+}
+
+.capstone span {
+  display: inline-flex;
+    position: relative;
+  left: 100px;
+  top: 50px;
+  width: 45%;
+  padding: 5px;
+   margin: 10px;
+}
+
+.resume{
+  width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+/* Work Projects */
+
+.work{
+    width: 90%;
+    position:relative;
+  margin: 25px 0px 75px 0px;
+  top: 10px;
+}
+
+.work span {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  width: 45%;
+  padding: 5px;
+  margin: 10px;
+}
+
+.work h2{
+  padding: 10px;
+  text-align: center;
+  }
+
+.work h3{
+    text-align: center;
+}
+
+.work h4{
+    text-align: center;
+}
+
+.work p{
+    padding: 10px;
+    text-align: center;
+}
+
+.work a{
+  position: relative;
+  padding: 5px;
+  margin: 25px 0px 25px 0px;
+  top: 5px;
+}
+
+.jira{
+  width: 100%;
+  left: 20px;
+}
+
+.jira li{
+    padding: 5px;
+}
+

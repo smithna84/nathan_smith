@@ -90,12 +90,11 @@ li a:hover {
   color: #818181;
 }
 
-@media screen and (max-height: 800px) {
+@media (max-height: 800px) {
   .nav {padding-top: 15px;}
   .nav a {font-size: 1rem;}
-  .content {max-width: 100%;}
-  .bio .right{
-
+  .content {max-width: 600px;}
+  .info{
   width: 65%;
   background-color: #F0F4EF}
   .image{height: 100%;
@@ -103,12 +102,12 @@ li a:hover {
   }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media (max-height: 450px) {
   .nav {padding-top: 15px;}
   .nav a {display: none;}
   .show a{display: block}
-  .content {max-width: 100%;}
-  .bio .right{
+  .content {max-width: 400px;}
+  .info{
   width: 65%;
   background-color: #F0F4EF}
   .image{height: 100%;
@@ -160,43 +159,28 @@ p{
 
 /* Bio Style */
 
-.bio{
-
-  width: 75%;
+.info{
+  width: 90%;
   position:relative;
-  display: flex;
-  flex-direction: row-reverse;
-  top: 10px;
-  bottom: 5%;
+  display: inline-flex;
+  top: 30px;
+  bottom: 15%;
+
   margin: 10px;
   background-color: #F0F4EF;
 }
 
-.right{
-  margin: 2rem 1.5rem;
-  width: 65%;
-  background-color: #F0F4EF
+.info span{
+    position: relative;
+    left: 10%;
 }
 
-.image > img{
-  position: relative;
-
-  left: 30%;
-  height: 50%;
-  width: 25%;
-}
-
-#main .info{
-  justify-content: center;
-  padding-left: 10px;
-}
-
-.bio .info{
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: 100%;
-  margin: 25px 0px 25px 0px;
+.info img{
+    position: relative;
+    left: 30%;
+    bottom: 5px;
+  width: 20%;
+  height: 30%;
 }
 
 #main h2{
@@ -211,7 +195,7 @@ margin-bottom: 1.5rem;
 .parallax {
   background-image: url("./images/Japan_Fish_Pegs.jpg");
   height: 750px;
-  width: 95%;
+  width: 90%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -367,6 +351,7 @@ top: 5px;
 }
 
 .webcam{
+    flex: 2;
     width: 100%;
     height: 90%;
     text-align:center;
@@ -374,6 +359,7 @@ top: 5px;
 }
 
 .weather{
+    flex: 2;
     width: 100%;
     height: 90%;
     text-align: center;

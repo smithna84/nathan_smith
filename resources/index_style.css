@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+
+/* Page Style */
+
+body{
+  font-family: Merriweather, serif;
+  font-size:12pt;
+  width: 100%;
+  height: 100%;
+
+  background-color: #F0F4EF;
+}
+
+/* Media Query for Desktop */
+
+@media only screen and (max-width: 1900px){
+.show{
+  display: none;
+}
+
+}
+
+/* Header Style */
+header{
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  width: 100%;
+  top:0%;
+  margin-right: 1rem;
+  border-bottom: 1px solid #083D77;
+  position: fixed;
+  z-index: 1;
+  background-color: #F0F4EF
+}
+
+.hide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 1.5rem;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.logo span:last-child{
+  color: firebrick;
+}
+
+/* The navigation bar menu */
+.nav {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 72px; /* Stay at the top */
+  padding-top: 5px;
+  overflow: hidden;
+  background-color: #083D77
+}
+
+.nav li {
+    float: left
+}
+
+/* The navigation menu links */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.show{
+  display: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+li a:hover {
+  color: #818181;
+}
+
+@media (max-height: 800px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 1rem;}
+  .content {max-width: 600px;}
+  .info{
+  width: 65%;
+  background-color: #F0F4EF}
+  .image{height: 100%;
+  width: 100%;}
+  }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {display: none;}
+  .show a{display: block}
+  .content {max-width: 400px;}
+  .info{
+  width: 65%;
+  background-color: #F0F4EF}
+  .image{height: 100%;
+  width: 75%;}
+  }
+
+/* Content */
+
+.content{
+  position: relative;
+  overflow-y: scroll;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+  background-color: #F0F4EF;
+  background-position: center;
+}
+
+h1{
+  font-family: Merriweather, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-family: Merriweather, serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h3{
+  font-family: Merriweather, serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h4{
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+/* Bio Style */
+
+.info{
+  width: 90%;
+  position:relative;
+  display: inline-flex;
+  top: 30px;
+  bottom: 15%;
+
+  margin: 10px;
+  background-color: #F0F4EF;
+}
+
+.info span{
+    position: relative;
+    left: 10%;
+}
+
+.info img{
+    position: relative;
+    left: 30%;
+    bottom: 5px;
+  width: 20%;
+  height: 30%;
+}
+
+#main h2{
+  margin-bottom: 1.5rem;
+}
+
+#main p{
+margin-bottom: 1.5rem;
+}
+
+/* Parallax Style */
+.parallax {
+  background-image: url("./images/Japan_Fish_Pegs.jpg");
+  height: 750px;
+  width: 90%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Interest in IT Section */
+
+#profile{
+
+  width: 75%;
+  position:relative;
+  margin: 25px 0px 25px 0px;
+
+}
+
+.it h2{
+padding: 10px;
+}
+.it p{
+  padding: 10px;
+}
+
+/* Skills and Certifications Section */
+
+#job {
+
+width: 75%;
+position:relative;
+display: flex;
+margin: 25px 0px 25px 0px;
+}
+
+.skills{
+  margin: 5px;
+  padding-right: 5px;
+  width: 75%;
+}
+
+.skills h2{
+  padding: 10px;
+}
+
+.skills h3{
+  padding: 10px;
+}
+
+.skills h4{
+  padding: 10px;
+}
+
+.skills p{
+  padding: 10px;
+}
+
+ul{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+.skills li{
+    padding: 5px;
+
+}
+
+/* Parallax2 Style */
+
+.parallax2 {
+  background-image: url("./images/Japan_MT_Fuji.jpg");
+  height: 750px;
+  width: 99%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Project Idea Section */
+
+.testimonials{
+    width: 75%;
+  position:relative;
+  margin: 25px 0px 75px 0px;
+}
+
+.testimonials h2{
+  padding: 10px;
+}
+
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  width: 50%;
+  position: relative;
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
