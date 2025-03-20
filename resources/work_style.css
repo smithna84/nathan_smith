@@ -210,16 +210,21 @@ ul{
   padding: 5px;
   margin: 25px 0px 25px 0px;
   top: 5px;
+  text-align: center;
 }
 
 .work-container{
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
     height: 510px;
+}
+
+.work-container li{
+  padding: 5px;
 }
 
 .jira{
@@ -227,7 +232,8 @@ ul{
   left: 20px;
 }
 
-.work-container li{
-    padding: 5px;
+.jira_snippet img{
+  width: 50%;
+  height: 75%;
 }
 

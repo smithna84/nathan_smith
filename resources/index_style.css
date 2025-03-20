@@ -198,9 +198,16 @@ padding: 10px;
 }
 .it p{
   padding: 10px;
+  line-height: 1.5;
 }
 
 .it li{
+  padding: 5px;
+  line-height: 1.5;
+}
+
+.it h3{
+  margin: 10px;
   padding: 5px;
 }
 
