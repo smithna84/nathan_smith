@@ -183,17 +183,6 @@ p{
     border-color: white;
 }
 
-/* Parallax Style */
-.parallax {
-  background-image: url("./images/Japan_Fish_Pegs.jpg");
-  height: 750px;
-  width: 90%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 /* Interest in IT Section */
 
 #profile{
@@ -213,6 +202,17 @@ padding: 10px;
 
 .it li{
   padding: 5px;
+}
+
+/* Parallax Style */
+.parallax {
+  background-image: url("./images/Japan_watermill.jpg");
+  height: 750px;
+  width: 90%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Skills and Certifications Section */
